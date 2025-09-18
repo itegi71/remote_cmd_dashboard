@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Command Logs
+        </title>
+        
+    </head>
+    <body>
+        <h1>Executed command  logs</h1>
+        <table border="1">
+            <tr>
+                <th>server ip</th>
+                <th>command</th>
+                <th>output</th>
+                <th>Timestamp</th>
+            
+            </tr>
+            {% for log in logs %}
+            <tr>
+                <td>{{log.Server_ip}}</td>
+                <td>{{log.command}}</td>
+                <td>{{log.output}}</td>
+                <td>{{log.Timestamp}}</td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="4">No logs yet</td>
+            </tr>
+            {% endfor %}
+
+        </table>
+
+       
+    </body>
+</html>

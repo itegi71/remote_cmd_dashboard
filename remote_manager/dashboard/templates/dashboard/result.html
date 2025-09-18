@@ -1,0 +1,9 @@
+{% extends 'dashboard/base.html' %}
+
+{% block content %}
+    <h2>Command Results for {{ hostname }}</h2>
+    <p><strong>Command:</strong> {{ command }}</p>
+    <pre>{{ output }}</pre>
+
+    <a href="{% url 'dashboard_home' %}" class="btn btn-secondary mt-3">Back</a>
+{% endblock %}
