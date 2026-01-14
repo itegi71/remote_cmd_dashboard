@@ -1,4 +1,4 @@
-# Remote command Dashboard
+Remote command Dashboard
 A web-based dashboard built with Django for secure SSH server management. It centralizes remote command execution into a user-friendly interface, eliminating constant terminal switching. All commands and outputs are logged in a database for auditing and review.
 Core functionality is powered by SSHClientManager, an object-oriented Python class wrapping Paramiko for SSH connections and execution.
 
@@ -26,7 +26,7 @@ Unlike existing dashboards, this project aims to evolve into a smart, predictive
 
 🔹 Predictive Command Assistance
 
-Use Sequence Prediction Models (Markov Chains, RNNs, or Transformers) trained on the CommandLog database.Suggest probable next commands in real-time (autocomplete).
+Use Sequence Prediction Models  trained on the CommandLog database.Suggest probable next commands in real-time (autocomplete).
 Context-aware: learns patterns by user, server type, and time-of-day.
 
 🔹 Intelligent Risk Detection
